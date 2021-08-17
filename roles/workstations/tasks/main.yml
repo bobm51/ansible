@@ -1,12 +1,7 @@
-- name: Download and Install google chrome
+- name: Install google chrome
   tags: workstations
-  get_url:
-    url: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    dest:  /home/simone
-    owner: simone
-    group: simone
-    mode:  0644
-  notify: install_google-chrome
+  package:
+    deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   
 - name: Install keepass2
   tags: workstations
