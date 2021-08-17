@@ -1,0 +1,63 @@
+- name: Download and Install google chrome
+  tags: workstations
+  get_url:
+    url: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    dest:  /home/simone
+    owner: simone
+    group: simone
+    mode:  0644
+  notify: install_google-chrome
+  
+- name: Install keepass2
+  tags: workstations
+  package:
+    name: keepass2
+    state: present
+
+- name: Install Samba
+  tags: workstations
+  package:
+    name: samba
+    state: latest
+
+- name: Install thunderbird
+  tags: workstations
+  package:
+    name: thunderbird
+    state: latest
+ 
+- name: Install ansible
+  tags: workstations
+  package:
+    name: ansible
+    state: latest
+
+- name: Install snap
+  tags: workstations
+  package:
+    name: snapd
+    state: latest
+
+- name: Install ReaR
+  tags: workstations
+  package:
+    name: rear
+    state: latest
+
+- name: Install htop
+  tags: workstations
+  package:
+    name: htop
+    state: latest
+
+- name: Install lxd
+  tags: workstations
+  package:
+    name: lxd
+    state: latest 
+
+- name: Install vagrant
+  tags: workstations
+  package:
+    name: vagrant
+    state: latest

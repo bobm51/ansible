@@ -1,0 +1,4 @@
+- name: install_google-chrome
+  apt:
+    deb: /home/simone/google-chrome-stable_current_amd64.deb
+    state: present
