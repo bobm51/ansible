@@ -36,8 +36,6 @@ PermitRootLogin no
 #MaxAuthTries 6
 #MaxSessions 10
 
-AllowUsers {{ ssh_users }}
-
 #PubkeyAuthentication yes
 
 # Expect .ssh/authorized_keys2 to be disregarded by default in future.
@@ -59,6 +57,8 @@ AllowUsers {{ ssh_users }}
 # To disable tunneled clear text passwords, change to no here!
 PasswordAuthentication no
 #PermitEmptyPasswords no
+
+AllowUsers {{ ssh_users }}
 
 # Change to yes to enable challenge-response passwords (beware issues with
 # some PAM modules and threads)
