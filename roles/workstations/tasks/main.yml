@@ -56,3 +56,22 @@
   package:
     name: vagrant
     state: latest
+
+- name: Install java
+  tags: workstations
+  package:
+    name: default-jre
+    state: present
+
+- name: Install jdk
+  tags: workstations
+  package:
+    name: default-jdk
+    state: present
+ 
+- name: Install netbeans
+  snap:
+    name: netbeans
+    classic: yes
+    state: present
+
