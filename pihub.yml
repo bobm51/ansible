@@ -1,2 +1,0 @@
-ssh_users: "bmcnabb simone"
-ssh_template_file: sshd_config_utuntu.j2
