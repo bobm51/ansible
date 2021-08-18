@@ -75,3 +75,7 @@
     classic: yes
     state: present
 
+- name: Install tmux
+  package:
+    name: tmux
+    state: present
