@@ -7,3 +7,8 @@
     group: root
     mode: 0644
   notify: restart_sshd
+
+- name: Install ncdu
+  package:
+    name: ncdu
+    state: latest

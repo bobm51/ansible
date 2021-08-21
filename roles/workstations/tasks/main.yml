@@ -57,6 +57,12 @@
     name: vagrant
     state: latest
 
+- name: Install virtual box
+  tags: workstations
+  package:
+    name: virtualbox-qt
+    state: latest
+
 - name: Install java
   tags: workstations
   package:
@@ -70,12 +76,15 @@
     state: present
  
 - name: Install netbeans
+  tags: workstations
   snap:
     name: netbeans
     classic: yes
     state: present
 
 - name: Install tmux
+  tags: workstations
   package:
     name: tmux
-    state: present
+    state: latest
+
